@@ -1,6 +1,5 @@
 import json
 import pathlib
-import os
 
 import joblib
 from sklearn.datasets import load_iris
@@ -11,7 +10,7 @@ from sklearn.model_selection import train_test_split
 MODEL_DIR = pathlib.Path("model")
 
 # Model settings.
-N_ESTIMATORS = 1  # number of trees in the forest
+N_ESTIMATORS = 10  # number of trees in the forest
 MAX_DEPTH = 1  # maximum depth of each tree; None means no limit
 RANDOM_STATE = 42  # fixed seed
 TEST_SIZE = 0.2  # test split fraction
